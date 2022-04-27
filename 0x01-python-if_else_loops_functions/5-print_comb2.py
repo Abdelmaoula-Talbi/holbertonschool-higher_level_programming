@@ -4,3 +4,4 @@ for number in range(0, 100):
         print(number)
     else:
         print("{:02}, ".format(number), end="")
+#        print(f"{number:02}", end=", ")
