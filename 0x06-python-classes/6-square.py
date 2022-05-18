@@ -78,8 +78,6 @@ class Square:
         """Public instance method that prints in stdout the square
         with the character #, if size is equal to 0, print an empty line
         """
-        if self.__size == 0:
-            print()
         for l in range(0, self.__position[1]):
             print()
         for i in range(0, self.__size):
@@ -87,4 +85,6 @@ class Square:
                 print(" ", end="")
             for j in range(0, self.__size):
                 print("#", end="")
+            print()
+        if self.__size == 0:
             print()
