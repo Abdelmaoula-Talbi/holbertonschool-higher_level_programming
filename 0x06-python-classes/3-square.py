@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Represents a class that defines a square
-by private attribute size
-and calculate the square area.
+    by private attribute size
+    and calculate the square area.
 
 """
 
