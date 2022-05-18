@@ -12,11 +12,13 @@ class Square:
     the square area
 
     """
+
     def __init__(self, size=0):
         """Initialize the class Square
         Args:
             size (int): paramater size to define the size of the square.
         """
+
         self.__size = size
         if type(size) != int:
             raise TypeError("size must be an integer")
@@ -27,4 +29,5 @@ class Square:
         Returns:
             The current square area.
         """
+
         return self.__size * self.__size
