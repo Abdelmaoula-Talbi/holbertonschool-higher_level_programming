@@ -1,18 +1,22 @@
 #!/usr/bin/python3
 """Represents a class that defines a square
     by private attribute size
-    and calculate the square area.
+    and calculates the square area.
 
 """
 
 
 class Square:
-    """Initializes the class
+    """Square class with exception raising
+    and public instance method to calculate
+    the square area
 
-    Args:
-        size (int): The paramater to define the square
     """
     def __init__(self, size=0):
+        """Initialize the class Square
+        Args:
+            size (int): paramater size to define the size of the square.
+        """
         self.__size = size
         if type(size) != int:
             raise TypeError("size must be an integer")
