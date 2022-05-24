@@ -34,14 +34,14 @@ Test a float number
 	>>> add_integer(100.3, -2)
 	98
 
-Test the non int or float argument a
+Test the non int or float argument b
 ************************************
 
 	>>> add_integer(4, "school")
 	Traceback (most recent call last):
 	TypeError: b must be an integer
 
-Test the non int or float argument b
+Test the non int or float argument a
 ************************************
 
 	>>> add_integer(None)
