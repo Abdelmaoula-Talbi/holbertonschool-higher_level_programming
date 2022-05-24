@@ -1,0 +1,50 @@
+The "0-add_integer" module
+==========================
+
+Using "add_integer"
+-------------------
+
+This is test file for the "add_integer" function that returns the sum of two integers.
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Now test it:
+
+Test two positive numbers
+*************************
+
+	>>> add_integer(1, 2)
+	3
+
+Test one negative number
+************************
+
+	>>> add_integer(100, -2)
+	98
+
+Test only one passed argument to the function
+*********************************************
+
+	>>> add_integer(2)
+	100
+
+Test a float number
+*******************
+
+	>>> add_integer(100.3, -2)
+	98
+
+Test the non int or float argument a
+************************************
+
+	>>> add_integer(4, "school")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Test the non int or float argument b
+************************************
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
