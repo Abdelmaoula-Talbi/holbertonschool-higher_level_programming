@@ -6,5 +6,5 @@ def best_score(a_dictionary):
     with the biggest integer value"""
     if a_dictionary is None:
         return None
-    biggest_value = max(a_dictionary, key= lambda x: a_dictionary[x])
+    biggest_value = max(a_dictionary, key=lambda x: a_dictionary[x])
     return biggest_value
