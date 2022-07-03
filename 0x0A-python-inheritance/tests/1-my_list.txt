@@ -1,10 +1,11 @@
-The "1-my_list" module
-**********************
+# 1-my_list.txt
 
-Using "print_sorted"
--------------------
 
-This is the test file for the "print_sorted" function that prints a given list but sorted in ascending sort.
+=======================
+How to Use 1-my_list.py
+=======================
+
+This module defines a class ``MyList`` that inherits from ``list``.
 
 Instantiation
 =============
@@ -78,6 +79,7 @@ And removed with the ``remove()`` method.
     >>> print(my_list)
     [2, 3]
 
+See the documentation on Python lists for more built-in methods.
 
 ``print_sorted`` Method
 =======================
@@ -135,17 +137,19 @@ Note that lists of strings are sorted lexographically.
     >>> my_list.append("Holberton")
     >>> my_list.append("Betty")
     >>> print(my_list)
-    ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
+    ['Alex', 'Poppy', 'School', 'Holberton', 'Betty']
 
 ::
 
     >>> my_list.print_sorted()
-    ['Betty', 'Brennan', 'Holberton', 'Poppy', 'School']
+    ['Alex', 'Betty', 'Holberton', 'Poppy', 'School']
+
+Another friendly reminder that the original list is unaltered :)
 
 ::
 
     >>> print(my_list)
-    ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
+    ['Alex', 'Poppy', 'School', 'Holberton', 'Betty']
 
 Nothing to sort with empty lists.
 
@@ -164,4 +168,3 @@ will be raised.
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
-
