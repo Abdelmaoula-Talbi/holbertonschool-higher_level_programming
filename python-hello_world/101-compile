@@ -1,2 +1,4 @@
 #!/bin/bash
-import $PYFILE
+import py_compile
+py_compile.compile("$PYFILE")
+
