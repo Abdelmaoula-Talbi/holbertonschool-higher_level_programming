@@ -5,6 +5,5 @@ for i in range(0, 100):
         break
 for j in range((i + 1), 100):
     if ((j // 10) < (j % 10)):
-        print(", ", end="")
-        print("{}{}".format((j // 10), (j % 10)), end="")
+        print(", {}{}".format((j // 10), (j % 10)), end="")
 print()
