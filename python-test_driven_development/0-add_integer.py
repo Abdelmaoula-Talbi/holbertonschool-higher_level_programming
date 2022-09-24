@@ -4,6 +4,8 @@
 A module that represents a function
 
 """
+
+
 def add_integer(a, b=98):
 
     """
@@ -18,4 +20,8 @@ def add_integer(a, b=98):
         a = int(a)
     if type(b) is float:
         b = int(b)
+    if (a+1) == a:
+        raise OverflowError('number too large')
+    if b+1 == b:
+        raise OverflowError('number too large')
     return (a + b)
