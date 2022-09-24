@@ -20,8 +20,8 @@ def matrix_divided(matrix, div):
             if (type(matrix) is not list or type(row) is not list or
                     type(elem) not in (int, float)):
                 raise TypeError('matrix must be a matrix \
-                                (list of lists) of integers/floats')
+                        (list of lists) of integers/floats')
             if len(row) != len(matrix[0]):
                 raise TypeError("Each row of the matrix must \
-                                have the same size")
+                        have the same size")
     return [[round(elem/div, 2) for elem in row] for row in matrix]
