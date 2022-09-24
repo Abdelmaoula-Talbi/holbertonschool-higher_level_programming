@@ -1,68 +1,57 @@
-The "0-add_integer" module
-==========================
+============================
+How to use 0-add_integer.py
+============================
 
-Using "add_integer"
--------------------
-
-This is test file for the "add_integer" function that returns the sum of two integers.
+First import the module:
 
 	>>> add_integer = __import__('0-add_integer').add_integer
 
-Now test it:
+Then use it:
 
-Test two positive integers
-**************************
-
+Positive numbers
+****************
 	>>> add_integer(1, 2)
 	3
+	>>> add_integer(154, 6)
+	160
 
-Test two negative integers
-**************************
+Negative numbers
+****************
+	
+	>>> add_integer(-2, 2)
+	0
 
-	>>> add_integer(-3, -8)
-	-11
+Floats
+******
 
-Test one negative integer
-*************************
-
-	>>> add_integer(100, -2)
-	98
-
-Test two positive floats
-************************
-
-	>>>add_integer(5.547, 2.4)
+	>>> add_integer(4.2, 3)
 	7
 
-Test two negative floats
-************************
+One argument
+************
+	>>> add_integer(1)
+	99
 
-	>>>add_integer(-5.547, -2.4)
-	-7
-
-Test only one passed argument to the function
-*********************************************
-
-	>>> add_integer(2)
-	100
-
-Test a float number
-*******************
-
-	>>> add_integer(100.3, -2)
-	98
-
-Test the non int or float argument b
-************************************
-
-	>>> add_integer(4, "school")
-	Traceback (most recent call last):
-	TypeError: b must be an integer
-
-Test the non int or float argument a
-************************************
-
-	>>> add_integer(None)
+None
+****
+	>>> add_integer(None, 5)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
+Strings
+*******
+	>>> add_integer(28, "hello")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+More arguments than they should be
+**********************************
+	>>> add_integer(1, 2, 3)
+	Traceback (most recent call last):
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Missing arguments
+*****************
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
