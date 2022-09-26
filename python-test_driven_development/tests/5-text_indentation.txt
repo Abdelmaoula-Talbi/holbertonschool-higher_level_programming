@@ -1,0 +1,51 @@
+================================
+How to use 5-text_indentation.py
+================================
+
+First, import the module:
+
+	>>> indentation = __import__('5-text_indentation').text_indentation
+
+Now, use it:
+
+
+Correct input type
+******************
+	>>> indentation("jfsldk, fdjkfldjfs df dre . sdmlfkj? dslmfj?dfkdfj:mqsdkfjmsdjf dfjsjf: Djdklfjdl. Edkfjdkj dfdf")
+	jfsldk, fdjkfldjfs df dre .
+	<BLANKLINE>
+	sdmlfkj?
+	<BLANKLINE>
+	dslmfj?
+	<BLANKLINE>
+	dfkdfj:
+	<BLANKLINE>
+	mqsdkfjmsdjf dfjsjf:
+	<BLANKLINE>
+	Djdklfjdl.
+	<BLANKLINE>
+	Edkfjdkj dfdf
+
+Incorrect input type
+********************
+	>>> indentation(574)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+No input
+********
+	>>> indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Too much arguments
+******************
+	>>> indentation("dlfkjd? dkfjd. dkjfdk, dfkjd fkjdke, jfk:dkfjdlkfj?", "dkjfdk")
+	Traceback (most recent call last):
+	TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+None
+****
+	>>> indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
