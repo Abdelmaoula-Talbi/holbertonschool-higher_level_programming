@@ -26,6 +26,15 @@ Correct input type
 	<BLANKLINE>
 	Edkfjdkj dfdf
 
+	>>> indentation("Holberton.School?How are you:John")
+	Holberton.
+	<BLANKLINE>
+	School?
+	<BLANKLINE>
+	How are you:
+	<BLANKLINE>
+	John
+
 Incorrect input type
 ********************
 	>>> indentation(574)
