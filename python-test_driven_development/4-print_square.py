@@ -5,6 +5,7 @@ A module that representes a function that prints a square"
 
 """
 
+
 def print_square(size):
     """
     A function that prints a square with the symbol '#'
