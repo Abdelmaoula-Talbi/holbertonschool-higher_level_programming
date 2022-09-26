@@ -1,0 +1,33 @@
+===========================
+How to use 3-say_my_name.py
+===========================
+
+First import the module:
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Then use it:
+
+
+Correct type
+************
+	>>> say_my_name("qsdfmlkj", "azertpoiu")
+	My name is qsdfmlkj azertpoiu
+	
+Incorrect Type
+**************
+	>>> say_my_name("qsdfmlkj", 25)
+	Traceback (most recent call last):
+	TypeError: last name must be a string
+
+None
+****
+	>>> say_my_name(None, "azertpoiu")
+	Traceback (most recent call last):
+	TypeError: first name must be a string
+
+Missing required arguments
+**************************
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'	
