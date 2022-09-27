@@ -57,5 +57,5 @@ class Rectangle:
             if row > 0:
                 string += "\n"
             for column in range(self.__width):
-                string += ":"
+                string += "#"
         return string
