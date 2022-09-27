@@ -53,9 +53,10 @@ class Rectangle:
         if self.perimeter == 0:
             return ""
 #        return ("#" * self.__width + "\n") * self.__height
-        for row in range(self.__height):
-            if row > 0:
-                string += "\n"
-            for column in range(self.__width):
-                string += "#"
-        return string
+        else:
+            for row in range(self.__height):
+                if row > 0:
+                    string += "\n"
+                for column in range(self.__width):
+                    string += "#"
+            return string
