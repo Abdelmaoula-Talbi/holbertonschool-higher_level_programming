@@ -6,6 +6,7 @@ that is a subclass of list
 
 """
 
+
 class MyList(list):
     """
     A class that represents
