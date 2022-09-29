@@ -1,0 +1,40 @@
+=====================================
+How to use the module 7-base_geometry
+=====================================
+
+First, we import it:
+	>>> base = __import__('7-base_geometry').BaseGeometry
+
+Then, use it:
+
+
+Correct expected input
+**********************
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", 5)
+
+NoneType
+********
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", None)
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
+Missing arguments
+************
+	>>> bg = base()
+	>>> bg.integer_validator("holberton")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional arguments: 'value'
+
+ValueError
+**********
+	>>> bg = base()
+	>>> bg.integer_validator("holberton", -8)
+	Traceback (most recent call last):
+	ValueError: holberton must be greater than 0
+
+	>>> bg = base()
+	>>> bg.integer_validator("holberton", 0)
+	Traceback (most recent call last):
+	ValueError: holberton must be greater than 0
