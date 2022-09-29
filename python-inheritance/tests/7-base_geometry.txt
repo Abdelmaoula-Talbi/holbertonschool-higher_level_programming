@@ -20,6 +20,33 @@ NoneType
 	Traceback (most recent call last):
 	TypeError: Hello must be an integer
 
+Incorrect type
+**************
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", "holberton")
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", [1, 2, 5, 874, "School", 9, -2])
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", 2.5)
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", (2, 758))
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", False)
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
 Missing arguments
 ************
 	>>> bg = base()
@@ -38,3 +65,10 @@ ValueError
 	>>> bg.integer_validator("holberton", 0)
 	Traceback (most recent call last):
 	ValueError: holberton must be greater than 0
+
+Function Area()
+***************
+	>>> bg = base()
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
