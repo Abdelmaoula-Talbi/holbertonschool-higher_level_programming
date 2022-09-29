@@ -3,7 +3,7 @@ How to use 1-my_list.py
 =======================
 
 First, import the module:
-	>>> my_list = __import__('1-my_list').MyList
+	>>> MyList = __import__('1-my_list').MyList
 
 
 Then, use it:
