@@ -47,6 +47,11 @@ Incorrect type
 	Traceback (most recent call last):
 	TypeError: Hello must be an integer
 
+	>>> bg = base()
+	>>> bg.integer_validator("Hello", {8471, 95})
+	Traceback (most recent call last):
+	TypeError: Hello must be an integer
+
 Missing arguments
 ************
 	>>> bg = base()
