@@ -25,7 +25,7 @@ Missing arguments
 	>>> bg = base()
 	>>> bg.integer_validator("holberton")
 	Traceback (most recent call last):
-	TypeError: integer_validator() missing 1 required positional arguments: 'value'
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 ValueError
 **********
