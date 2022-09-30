@@ -12,9 +12,9 @@ class Square(__import__('9-rectangle').Rectangle):
     is a subclass of Rectangle class
     """
     def __init__(self, size):
-        super().__init__(size, size)
         self.__size = size
         self.integer_validator("size", size)
+        super().__init__(size, size)
 
     def area(self):
         return self.__size ** 2
