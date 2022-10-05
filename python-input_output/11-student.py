@@ -27,6 +27,7 @@ class Student:
             return my_dict
 
     def reload_from_json(self, json):
-        for k, v in self.__dict__.items():
-            self.__dict__[k] = json[k]
+        if len(json) > 1:
+            for k, v in self.__dict__.items():
+                self.__dict__[k] = json[k]
         return self.__dict__
