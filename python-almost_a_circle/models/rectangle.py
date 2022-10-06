@@ -6,7 +6,7 @@ A module that representes a class Rectangle
 """
 
 
-class Rectangle(__import__("models.base").Base):
+class Rectangle(__import__("base").Base):
     """
     A class Rectangle
     """
