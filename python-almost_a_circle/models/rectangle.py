@@ -5,8 +5,10 @@ A module that representes a class Rectangle
 
 """
 
+from models.base import Base
 
-class Rectangle(__import__("base").Base):
+
+class Rectangle(Base):
     """
     A class Rectangle
     """
