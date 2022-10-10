@@ -115,3 +115,68 @@ class Rectangle(Base):
         """__str__method to print the Rectangle instance representation"""
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y}\
  - {self.__width}/{self.__height}")
+
+    def update(self, *args):
+        """method that assigns an argument to each attribute""" 
+        keys = ["id", "width", "height", "x", "y"]
+        zipped = zip(keys, args)
+        tuple_zip = tuple(zipped)
+        for i in range(len(args)):
+            setattr(self, tuple_zip[i][0], tuple_zip[i][1])
+
+#        my_args = iter(args)
+#        for k, v in self.__dict__.items():
+#            if list(self.__dict__.keys()).index(k) >= len(args):
+#                break
+#            v = next(my_args)
+#        return self.__dict__
+
+     #   my_args = list(args)
+    #    for i in range(len(args)):
+   #         for j in keys:
+  #              if j >= len(args):
+ #                   break
+#                else:
+#                    j = args[i]
+#                    i += 1
+#            break
+#        return self.__dict__
+
+
+
+
+#        for i in range(len(args)):
+#            if len(args) == 0:
+#                continue
+#            if len(args) == 1:
+#                self.id = args[0]
+#            if len(args) == 2:
+#                self.id = args[0]
+#                self.__width = args[1]
+#            if len(args) == 3:
+#                self.id = args[0]
+ #               self.__width = args[1]
+  #              self.__height = args[2]
+   #         if len(args) == 4:
+#            self.id = args[0]
+ #               self.__width = args[1]
+  #            self.__height = args[2]
+   #             self.__x = args[3]
+    #        if len(args) == 5:
+     #           self.id = args[0]
+      #          self.__width = args[1]
+       #         self.__height = args[2]
+        #        self.__x = args[3]
+         #       self.__y = args[4]
+
+#        for arg in args:
+#            x = next(keys)
+#            x = arg
+
+#        keys = ["id", "width", "height", "x", "y"]
+#        for k in range(len(keys)):
+#            for arg in args:
+#                if  k >= len(args):
+#                    break
+#                else:
+#                    setattr(self, keys[k], arg)
