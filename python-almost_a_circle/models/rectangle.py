@@ -116,8 +116,11 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y}\
  - {self.__width}/{self.__height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """method that assigns an argument to each attribute"""
+        if not args or len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
         keys = ["id", "width", "height", "x", "y"]
         zipped = zip(keys, args)
         tuple_zip = tuple(zipped)
