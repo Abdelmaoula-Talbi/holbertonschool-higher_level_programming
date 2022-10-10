@@ -126,3 +126,7 @@ class Rectangle(Base):
         tuple_zip = tuple(zipped)
         for i in range(len(args)):
             setattr(self, tuple_zip[i][0], tuple_zip[i][1])
+
+    def to_dictionary(self):
+        """method that returns the dictionary representation of a Rectangle"""
+        return self.__dict__
