@@ -40,3 +40,7 @@ class Square(Rectangle):
         tuple_zip = tuple(zipped)
         for i in range(len(args)):
             setattr(self, tuple_zip[i][0], tuple_zip[i][1])
+
+    def to_dictionary(self):
+        """a method to return the dictionary representation of a Square"""
+        return {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
