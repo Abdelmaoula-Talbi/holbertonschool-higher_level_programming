@@ -29,3 +29,14 @@ class Square(Rectangle):
     def size(self, size):
         self.width = size
         self.height = size
+
+    def update(self, *args, **kwargs):
+        """method that assigns an argument to each attribute"""
+        if not args or len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        keys = ["id", "size", "x", "y"]
+        zipped = zip(keys, args)
+        tuple_zip = tuple(zipped)
+        for i in range(len(args)):
+            setattr(self, tuple_zip[i][0], tuple_zip[i][1])
