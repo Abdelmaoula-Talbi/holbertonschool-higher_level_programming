@@ -11,7 +11,6 @@ function biggest (array) {
       }
     }
   }
-  console.log(array);
   console.log(array[(array.length - 2)]);
 }
 const args = process.argv;
