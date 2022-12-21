@@ -16,7 +16,7 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT cities.name FROM cities JOIN states ON states.id = cities.state_id WHERE states.name = State_Name ORDER BY cities.id")
+    cur.execute("SELECT cities.name FROM cities JOIN states ON states.id = cities.state_id WHERE states.name = %(State_Name)s ORDER BY cities.id", {'State_Name': states.name})
     rows = cur.fetchall()
     for row in rows:
         print(row)
