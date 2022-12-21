@@ -19,8 +19,6 @@ if __name__ == "__main__":
     cur.execute("SELECT cities.name FROM cities JOIN states ON states.id = cities.state_id WHERE states.name = %(State_Name)s ORDER BY cities.id", {'State_Name': State_Name})
     rows = cur.fetchall()
     for row in rows:
-        if row != rows[0]:
-            print(", ")
-        print(row)
+     print(", ".join(row))
     cur.close()
     db.close()
